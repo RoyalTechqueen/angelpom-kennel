@@ -24,7 +24,7 @@ const AdoptionProcess: React.FC = () => {
   return (
     <section className="flex flex-col min-h-screen ">
       <Header />
-      <main className="flex-grow p-16 ">
+      <main className="flex-grow p-8">
         <h1 className="text-5xl font-bold text-center mb-10 mt-4 ">Adoption Process</h1>
 
         {/* Step Indicator */}
@@ -47,7 +47,7 @@ const AdoptionProcess: React.FC = () => {
         {step === 1 && (
           <div>
             <h2 className="text-2xl font-bold text-center mb-6">Step 1: Fill the Form</h2>
-            <form className="max-w-3xl mx-auto bg-white p-8 shadow-lg rounded-lg">
+            <form className="bg-white p-8 shadow-lg rounded-lg">
               <div className="mb-4">
                 <label className="block text-lg font-semibold mb-2" htmlFor="name">
                   Full Name

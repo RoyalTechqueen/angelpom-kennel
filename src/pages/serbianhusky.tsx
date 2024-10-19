@@ -51,18 +51,28 @@ const SiberianHuskyPage: React.FC = () => {
       </div>
 
       <div className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Available Siberian Husky Puppies</h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {[...Array(6)].map((_, index) => (
-            <div key={index} className="border border-gray-300 rounded-lg p-4">
-              <img src="/siberian-husky-puppy.jpg" alt={`Puppy ${index + 1}`} className="w-full h-auto rounded-lg mb-2" />
-              <h3 className="font-bold">Puppy Name</h3>
-              <p>Age: 8 weeks</p>
-              <p>Price: $1200</p>
-            </div>
-          ))}
-        </div>
+  <h2 className="text-2xl font-semibold mb-4">Available French Bulldog Puppies</h2>
+  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    {[
+        { id: 1, name: 'Luna', breed: 'Serbian Husky', price: '$400', image: '/p1.jpg' },
+        { id: 2, name: 'Rocky', breed: 'Serbian Husky', price: '$350', image: '/s2.jpg' },
+        { id: 3, name: 'Forest', breed: 'Serbian Husky', price: '$300', image: '/s3.jpg' },
+    ].map((puppy) => (
+      <div key={puppy.id} className="border border-gray-300 rounded-lg p-4">
+        <img src={puppy.image} alt={`Puppy ${puppy.name}`} className="w-full h-auto rounded-lg mb-2" />
+        <h3 className="font-bold">{puppy.name}</h3>
+        <p>Breed: {puppy.breed}</p>
+        <p>Price: {puppy.price}</p>
+        <button
+          className="bg-yellow-500 text-white py-2 px-4 rounded-md mt-4 hover:bg-yellow-700"
+          onClick={() => window.location.href = '/adoption'}
+        >
+          Adopt Now
+        </button>
       </div>
+    ))}
+  </div>
+</div>
 
       <div className="flex flex-col md:flex-row items-start justify-between px-4">
         <div className="w-full mb-8">

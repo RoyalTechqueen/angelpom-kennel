@@ -52,18 +52,29 @@ const FrenchBulldogPage: React.FC = () => {
       </div>
 
       <div className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Available French Bulldog Puppies</h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {[...Array(6)].map((_, index) => (
-            <div key={index} className="border border-gray-300 rounded-lg p-4">
-              <img src="/french-bulldog-puppy.jpg" alt={`Puppy ${index + 1}`} className="w-full h-auto rounded-lg mb-2" />
-              <h3 className="font-bold">Puppy Name</h3>
-              <p>Age: 8 weeks</p>
-              <p>Price: $2000</p>
-            </div>
-          ))}
-        </div>
+  <h2 className="text-2xl font-semibold mb-4">Available French Bulldog Puppies</h2>
+  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    {[
+      { id: 1, name: 'Daisy', breed: 'French Bulldog', price: '$550', image: '/p4.jpg' },
+      { id: 2, name: 'Buddy', breed: 'French Bulldog', price: '$450', image: '/3.jpg' },
+      { id: 3, name: 'Peter', breed: 'French Bulldog', price: '$500', image: '/f3.jpg' },
+    ].map((puppy) => (
+      <div key={puppy.id} className="border border-gray-300 rounded-lg p-4">
+        <img src={puppy.image} alt={`Puppy ${puppy.name}`} className="w-full h-auto rounded-lg mb-2" />
+        <h3 className="font-bold">{puppy.name}</h3>
+        <p>Breed: {puppy.breed}</p>
+        <p>Price: {puppy.price}</p>
+        <button
+          className="bg-yellow-500 text-white py-2 px-4 rounded-md mt-4 hover:bg-yellow-700"
+          onClick={() => window.location.href = '/adoption'}
+        >
+          Adopt Now
+        </button>
       </div>
+    ))}
+  </div>
+</div>
+
 
       <div className="flex flex-col md:flex-row items-start justify-between px-4">
         <div className="w-full mb-8">
@@ -114,13 +125,7 @@ const FrenchBulldogPage: React.FC = () => {
             They require moderate care, attention, and affection, so be prepared for a lifelong companion with a big personality!
           </p>
 
-          <h2 className="text-4xl font-semibold mt-4 mb-2">Additional Resources</h2>
-          <p className="text-lg">
-            For more information on French Bulldogs, check out the following resources:
-            <a href="https://www.akc.org/dog-breeds/french-bulldog/" target="_blank" rel="noopener noreferrer"> American Kennel Club</a> 
-            and 
-            <a href="https://www.rover.com/blog/french-bulldog-dog-breed/" target="_blank" rel="noopener noreferrer"> Rover</a>.
-          </p>
+         
         </div>
       </div>
       </main>

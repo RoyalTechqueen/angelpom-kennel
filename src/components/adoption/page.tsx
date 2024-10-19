@@ -34,9 +34,9 @@ const Adoption: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="flex-grow p-16 text-center">
+      <main className="flex-grow p-12 text-center">
         <h1 className="text-5xl font-bold mb-10 mt-4">Start Your Adoption Journey</h1>
-        <div className="px-8">
+        <div className="">
           {steps.map((step, index) => (
             <div key={index} className={`flex justify-${step.justify} mb-8`}>
               <div className="bg-white shadow-lg p-6 rounded-lg text-left w-full md:w-1/2">

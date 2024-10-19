@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  font-family: cursive;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   line-height: 1.5;
   --primary-color: #cbbdb4;
 }
