@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../layout/navbar';
 import Footer from '../layout/footer';
+import { Link } from 'react-router-dom';
 
 const SiberianHuskyPage: React.FC = () => {
   return (
@@ -63,12 +64,13 @@ const SiberianHuskyPage: React.FC = () => {
         <h3 className="font-bold">{puppy.name}</h3>
         <p>Breed: {puppy.breed}</p>
         <p>Price: {puppy.price}</p>
+        <Link to="/adoption">
         <button
-          className="bg-yellow-500 text-white py-2 px-4 rounded-md mt-4 hover:bg-yellow-700"
-          onClick={() => window.location.href = '/adoption'}
+          className="bg-yellow-500 text-white py-2 px-4 rounded-md mt-4 hover:bg-yellow-700"     
         >
           Adopt Now
         </button>
+        </Link>
       </div>
     ))}
   </div>
