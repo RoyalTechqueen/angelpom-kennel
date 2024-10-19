@@ -23,14 +23,16 @@ const Contact: React.FC = () => {
               <div className="mb-6">
                 <FaEnvelope className="inline-block text-yellow-600 mr-2" size={24} />
                 <span className="font-bold text-lg">Email</span>
-                <p className="text-gray-600 ml-8">info@pawperfect.com</p>
+                <p className="text-gray-600 ml-8">info@angelpom.com</p>
               </div>
 
               <div className="mb-6">
-                <FaPhone className="inline-block text-yellow-600 mr-2" size={24} />
-                <span className="font-bold text-lg">Phone</span>
-                <p className="text-gray-600 ml-8">+123-456-7890</p>
-              </div>
+              <FaPhone className="inline-block text-yellow-600 mr-2" size={24} />
+       <span className="font-bold text-lg">Phone</span>
+       <a href="tel:+447904849556" className="text-gray-600 ml-8 block">
+            +447904849556
+  </a>
+</div>
 
               <div>
                 <FaMapMarkerAlt className="inline-block text-yellow-600 mr-2" size={24} />

@@ -53,7 +53,7 @@ const Puppies: React.FC = () => {
         </div>
 
         
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {filteredPuppies.map((puppy) => (
             <div key={puppy.id} className="bg-white p-4 shadow-lg rounded-lg">
               <img

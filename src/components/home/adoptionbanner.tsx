@@ -7,7 +7,7 @@ const AdoptionBanner: React.FC = () => {
       <div className=" py-16 px-8">
         <h2 className="text-black text-4xl font-bold mb-4">Find Your Perfect Companion</h2>
         <p className="text-black text-lg mb-6">
-          At Pawfect Companion, we believe every puppy deserves a loving home. Adopt a furry friend today and give them the chance to bring joy and companionship into your life. 
+          At AngelPom Kennel, we believe every puppy deserves a loving home. Adopt a furry friend today and give them the chance to bring joy and companionship into your life. 
           Our adoption process is simple and transparent, ensuring that your new best friend is well cared for before they meet you.
         </p>
         <p className="text-black text-lg mb-6">

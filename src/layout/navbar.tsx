@@ -25,7 +25,7 @@ const Header: React.FC = () => {
       }`}>
         <div className="flex items-center justify-between px-4 py-6 sm:px-6 min-w-screen-8xl">
         <div className="flex items-center">
-       <Link to="/"> <h1 className="text-2xl font-bold">Pawfect Companion</h1></Link>
+       <Link to="/"> <h1 className="text-2xl font-bold">AngelPom Kennel</h1></Link>
       </div>
       <nav className='hidden lg:flex space-x-8 items-center text-xl font-semibold'>
             <Link to="/" className="text-gray-700 hover:text-yellow-500">Home</Link>
@@ -78,7 +78,7 @@ const Header: React.FC = () => {
         </div>
         <nav className="flex flex-col items-center p-6 space-y-6">
           <div className="flex items-center">
-            <h1 className="text-3xl font-extrabold">Pawfect Companion</h1>
+            <h1 className="text-3xl font-extrabold">AngelPom Kennel</h1>
           </div>
           <Link
             to="/"
