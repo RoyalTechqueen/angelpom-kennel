@@ -29,7 +29,7 @@ const AdoptionProcess: React.FC = () => {
 
         {/* Step Indicator */}
         <div className="flex justify-center mb-8">
-          {['Step 1: Fill Form', 'Step 2: Review Info', 'Step 3: Confirm'].map((label, index) => (
+          {['Step 1: Fill Form', 'Step 2: Review Info', 'Step 3: Confirm'].map((_, index) => (
             <div key={index} className="flex items-center">
               <div
                 className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold ${
